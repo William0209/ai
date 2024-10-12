@@ -25,7 +25,7 @@ const ImageGenerator = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`, // Use API key from .env
           },
         }
       );
